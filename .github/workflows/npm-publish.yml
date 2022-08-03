@@ -18,9 +18,9 @@ jobs:
       - run: npm ci
       - run: npm test
       - name: Setup JFrog CLI
-uses: jfrog/setup-jfrog-cli@v2.3.0
-      with:
-        # JFrog CLI Version
-       version: # optional, default is 2.14.0
-       # Remote repository in Artifactory pointing to 'https://releases.jfrog.io/artifactory/jfrog-cli'. Use this parameter in case you don't have an Internet access.
-       download-repository: # optional
+      - uses: jfrog/setup-jfrog-cli@v2.3.0
+        with:
+          # JFrog CLI Version
+          version: # optional, default is 2.14.0
+          # Remote repository in Artifactory pointing to 'https://releases.jfrog.io/artifactory/jfrog-cli'. Use this parameter in case you don't have an Internet access.
+          download-repository: # optional
