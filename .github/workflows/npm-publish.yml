@@ -1,26 +1,27 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
-
-name: Node.js Package
-
-on:
-  release:
-    types: [created]
-
-jobs:
-  build:
+--- 
+jobs: 
+  build: 
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
+    steps: 
+      - 
+        uses: actions/checkout@v3
+      - 
+        uses: actions/setup-node@v3
+        with: 
           node-version: 16
-      - run: npm ci
-      - run: npm test
-      - name: Setup JFrog CLI
-      - uses: jfrog/setup-jfrog-cli@v2.3.0
-        with:
-          # JFrog CLI Version
-          version: # optional, default is 2.14.0
-          # Remote repository in Artifactory pointing to 'https://releases.jfrog.io/artifactory/jfrog-cli'. Use this parameter in case you don't have an Internet access.
-          download-repository: # optional
+      - 
+        run: "npm ci"
+      - 
+        run: "npm test"
+      - 
+        name: "Setup JFrog CLI"
+      - 
+        uses: jfrog/setup-jfrog-cli@v2.3.0
+        with: 
+          download-repository: ~
+          version: ~
+name: "Node.js Package"
+true: 
+  release: 
+    types: 
+      - created
