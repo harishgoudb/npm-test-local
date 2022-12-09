@@ -11,8 +11,7 @@ registries:
   token: ${{secrets.JFROG_AUTH_TOKEN}}
 updates:
   - package-ecosystem: "npm"
+    # Files stored in `app` directory
     directory: "/"
-    registries:
-     - Artifactory
     schedule:
-     interval: "daily"
+      interval: "daily"
