@@ -8,7 +8,6 @@ registries:
   npm-npmjs:
     type: npm-registry
     url: https://hts2.jfrog.io/artifactory/api/npm/git-npm
-    username: npmuser
     password: ${{secrets.JFROG_AUTH_TOKEN}}
 registries:
   Artifactory:
