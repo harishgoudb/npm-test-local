@@ -8,7 +8,7 @@ registries:
   Artifactory:
   type: npm-registry
   url: https://hts2.jfrog.io/artifactory/api/npm/git-npm
-  token: ${{secret.JFROG_AUTH_TOKEN}}
+  token: ${{secrets.JFROG_AUTH_TOKEN}}
 updates:
   - package-ecosystem: "npm"
     directory: "/"
