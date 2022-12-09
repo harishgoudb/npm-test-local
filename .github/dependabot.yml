@@ -5,6 +5,11 @@
 
 version: 2
 registries:
+  npm-npmjs:
+    type: npm-registry
+    url: https://hts2.jfrog.io/artifactory/api/npm/git-npm
+    password: ${{secrets.JFROG_AUTH_TOKEN}}
+registries:
   Artifactory:
   type: npm-registry
   url: https://hts2.jfrog.io/artifactory/api/npm/git-npm
