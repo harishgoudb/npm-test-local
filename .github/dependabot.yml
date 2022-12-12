@@ -4,19 +4,19 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
-registries:
-  npm-npmjs:
-    type: npm-registry
-    url: https://hts2.jfrog.io/artifactory/api/npm/git-npm
-    password: ${{secrets.JFROG_AUTH_TOKEN}}
-registries:
-  Artifactory:
-  type: npm-registry
-  url: https://hts2.jfrog.io/artifactory/api/npm/git-npm
-  token: ${{secrets.JFROG_AUTH_TOKEN}}
 updates:
   - package-ecosystem: "npm"
     # Files stored in `app` directory
     directory: "/"
     schedule:
       interval: "daily"
+    registries:
+      - Artifactory
+      
+registries:
+  Artifactory:
+    type: npm-registry
+    url: https://hts2.jfrog.io/artifactory/api/npm/git-npm
+    password: ${{secrets.JFROG_AUTH_TOKEN}}
+    # username: ${{secrets.MY_ARTIFACTORY_USER}}
+    # password: ${{secrets.MY_ARTIFACTORY_PASSWORD}}
