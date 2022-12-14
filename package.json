@@ -1,14 +1,22 @@
 {
-  "name": "npm-example",
-  "version": "0.0.3",
+  "name": "@amit/examplenodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "node helloworld"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transmitsecurity-dev/exampleNodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/transmitsecurity-dev/exampleNodeJS/issues"
+  },
+  "homepage": "https://github.com/transmitsecurity-dev/exampleNodeJS#readme",
   "dependencies": {
-    "send": "^0.16.2"
-  },
-  "devDependencies": {
-    "debug": "^4.1.1",
-    "babel-cli": "^6.26.0"
+    "tar": "^6.0.0"
   }
 }
