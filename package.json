@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/transmitsecurity-dev/exampleNodeJS#readme",
   "dependencies": {
-    "tar": "^6.0.0"
+    "tar": "^6.0.0",
+    "jquery": "1.12.3"
+    
   }
 }
