@@ -7,7 +7,7 @@ version: 2
 updates:
   - package-ecosystem: 'npm'
     directory: '/' # Location of package manifests
-    target-branch: 'add-scope'
+    target-branch: 'master'
     schedule:
       interval: 'daily'
     registries:
