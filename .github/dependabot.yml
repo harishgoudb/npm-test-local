@@ -5,14 +5,15 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    # Files stored in `app` directory
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/' # Location of package manifests
+    target-branch: 'add-scope'
     schedule:
-      interval: "daily"
+      interval: 'daily'
     registries:
       - Artifactory
-      
+
+
 registries:
   Artifactory:
     type: npm-registry
